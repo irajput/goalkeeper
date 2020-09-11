@@ -1,0 +1,16 @@
+<h1 class="nice-font">TEAMS</h1>
+<hr>
+<br>
+<div class="card text-white bg-secondary mb-3">
+
+    <% @teams.each do |team| %>
+    <h3 class="card-header"> <%= team.name %></h3>
+    <div class="card-text"><%= link_to "Edit Team",team_path(team),:class => "btn btn-default d-flex justify-content-end text-white" %>
+    </div>
+    
+        <% end %>
+</div>
+
+
+
+

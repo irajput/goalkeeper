@@ -1,0 +1,32 @@
+// Place all the styles related to the teams controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+
+.createBig{
+    color:rgb(40, 45, 56);
+    font-size:25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.createTeam{
+    margin-top:40px;
+    font-size:30px;
+    font-weight:bold;
+}
+.center-screen{
+    margin-top:7em;
+}
+
+.input-nice{
+    border-radius:5px;
+    height:45px;
+    width:250px;
+    padding:4px;
+    border-width: thin;
+}
+
+.nice-font{
+    font-size:30px;
+    margin-top:2em;
+}

@@ -1,0 +1,19 @@
+
+
+<div class="center-screen">
+<%= form_for :team, url:teams_path do |f| %>
+<p>
+    <br>
+    <%= f.text_field :name, class:"form_control input-nice", placeholder:"Team Name"%>
+</p>
+
+            <p>
+                <%= f.submit class:"btn btn-primary" %>
+            </p>
+            
+            
+            <% end %>
+            
+
+        </div>
+

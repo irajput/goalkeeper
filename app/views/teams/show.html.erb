@@ -1,0 +1,14 @@
+<h3 class="nice-font"> <strong><%= @team.name %></strong></h3>
+
+<hr>
+
+
+<%= render 'users/users' %>
+<%= render 'users/form' %>
+
+
+
+<%= link_to "Delete Project", team_path(@team), 
+method: :delete,
+data: {confirm: "Are you sure?"},
+:class => 'btn btn-danger' %>

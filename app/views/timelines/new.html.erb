@@ -1,0 +1,40 @@
+<h3 class="nice-font">TIMELINE</h3>
+
+<hr>
+
+<!--team_timeline_index_pathteam_timeline_path(@team)-->
+<%= form_for :timeline,url:team_timeline_path(@team) do |f| %>
+
+<div class="row">
+    <div class="col">
+        <p>Project's Due Date: </p>
+    </div>
+    <div class="col">
+    <p>
+    <%= f.text_field :date, type:"date", class:"form_control input-nice", placeholder:"End Date" %>
+    </p>
+    </div>
+    <div class="col"></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>Number of Milestones: </p>
+        </div>
+        <div class="col">
+            <p>
+            <%= f.text_field :numMilestone, type:"number", class:"form_control input-nice", placeholder:"Number of Mini Goals" %>
+            </p>
+            </div>
+            <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <%= f.submit 'Generate Timeline',class:"btn btn-secondary" %>
+
+                </div>
+            </div>
+            <p>
+                
+            </p>
+
+            <% end %>

@@ -1,0 +1,13 @@
+<h5>Team Members:</h5>
+<% @team.users.each do |user| %>
+    <div class="card text-white bg-secondary mb-3">
+        <div class="card-body">
+        <h5 class="card-title"><%= user.name %></h5>
+        <p class="card-text"><%= user.role %></p>
+   </div>
+
+
+ 
+    </div>
+    <br>
+    <% end %>
